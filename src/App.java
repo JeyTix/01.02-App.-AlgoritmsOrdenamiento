@@ -3,7 +3,6 @@ public class App {
         System.out.println("Hello, World!");
 
         Menu m= new Menu();
-        m.menus();
-        
+        m.menus();       
     }
 }

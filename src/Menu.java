@@ -71,19 +71,19 @@ public class Menu {
                     System.out.println("\n\tMetodo Burbuja");
                     Burbuja b= new Burbuja();
                     do {
-                        System.out.println("/t/nEscoja Ascendente o Descendente");
+                        System.out.println("\n\tEscoja Ascendente o Descendente");
                         System.out.println("1. Ascendente");
                         System.out.println("2. Descendente");
                         System.out.println("3. Regresar al menu de metodos");
                         orden= xd.nextInt();
                         switch (orden) {
                             case 1:
-                                System.out.println("Burbuja Ascendete");
+                                System.out.println("\n\tBurbuja Ascendete");
                                 mostrarArreglo(b.burbujaAsc(arreglo));
                                 break;
 
                             case 2:
-                                System.out.println("Burbuja Descendente");
+                                System.out.println("\n\tBurbuja Descendente");
                                 mostrarArreglo(b.burbujaDes(arreglo));
                                 break;
 
@@ -212,6 +212,6 @@ public class Menu {
                 System.out.print(", ");
             }
         }
-        System.out.println(" ]");
+        System.out.println(" ]\n");
     }
 }
