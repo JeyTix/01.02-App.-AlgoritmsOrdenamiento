@@ -58,7 +58,7 @@ public class Menu {
         int orden;
         int pasos;
         do {
-            System.out.println("\n\t*** Escoja un metodo de ordenamiento ***");
+            System.out.println("\n\t** Escoja un metodo de ordenamiento **");
             System.out.println("1. Metodo Burbuja");
             System.out.println("2. Metodo Seleccion");
             System.out.println("3. Metodo Insercion");
@@ -72,28 +72,30 @@ public class Menu {
                     System.out.println("\n\tMETODO BURBUJA");
                     Burbuja b= new Burbuja();
                     do {
-                        System.out.println("\n\t*** Escoja Ascendente o Descendente ***");
+                        System.out.println("\n\t** Escoja Ascendente o Descendente **");
                         System.out.println("1. Ascendente");
                         System.out.println("2. Descendente");
                         System.out.println("3. Regresar al menu de metodos");
                         orden= xd.nextInt();
                         switch (orden) {
                             case 1:
-                                System.out.println("\n\t*** Burbuja Ascendete ***");
-                                mostrarArreglo(b.burbujaAsc(arreglo));
                                 do { 
-                                    System.out.println("\n\t*** Quieres ver los pasos ? ***");
+                                    System.out.println("\n\t** Quieres ver los pasos ? **");
                                     System.out.println("1. Si");
                                     System.out.println("2. No");
                                     System.out.println("3. Regresar al menu anterior");
                                     pasos= xd.nextInt();
                                     switch (pasos) {
                                     case 1:
-                                        System.out.println("\n\t*** Mostrando pasos del arreglo ***");
+                                        System.out.println("\n\t** Mostrando pasos del arreglo **");
+                                        System.out.println("\n\t** Burbuja Ascendete **");
+                                        mostrarArreglo(b.burbujaAscPa(arreglo));
                                         break;
 
                                     case 2:
-                                        System.out.println("\n\t*** No se mostrara pasos del arreglo ***");
+                                        System.out.println("\n\t** No se mostrara pasos del arreglo **");
+                                        System.out.println("\n\t** Burbuja Ascendete **");
+                                        mostrarArreglo(b.burbujaAsc(arreglo));
                                         break;
 
                                     case 3:
@@ -108,21 +110,24 @@ public class Menu {
                                 break;
 
                             case 2:
-                                System.out.println("\n\t*** Burbuja Descendente ***");
-                                mostrarArreglo(b.burbujaDes(arreglo));
+                                
                                 do { 
-                                    System.out.println("\n\t*** Quieres ver los pasos ? ***");
+                                    System.out.println("\n\t** Quieres ver los pasos ? **");
                                     System.out.println("1. Si");
                                     System.out.println("2. No");
                                     System.out.println("3. Regresar al menu anterior");
                                     pasos= xd.nextInt();
                                     switch (pasos) {
                                     case 1:
-                                        System.out.println("\n\t*** Mostrando pasos del arreglo ***");
+                                        System.out.println("\n\t** Mostrando pasos del arreglo **");
+                                        System.out.println("\n\t** Burbuja Descendente **");
+                                        mostrarArreglo(b.burbujaDesPa(arreglo));
                                         break;
 
                                     case 2:
-                                        System.out.println("\n\t*** No se mostrara pasos del arreglo ***");
+                                        System.out.println("\n\t** No se mostrara pasos del arreglo **");
+                                        System.out.println("\n\t** Burbuja Descendente **");
+                                        mostrarArreglo(b.burbujaDes(arreglo));
                                         break;
 
                                     case 3:
@@ -151,28 +156,31 @@ public class Menu {
                     System.out.println("\n\tMETODO SELECCION");
                     Seleccion s= new Seleccion();
                     do {
-                        System.out.println("\n\t*** Escoja Ascendente o Descendente ***");
+                        System.out.println("\n\t** Escoja Ascendente o Descendente **");
                         System.out.println("1. Ascendente");
                         System.out.println("2. Descendente");
                         System.out.println("3. Regresar al menu de metodos");
                         orden= xd.nextInt();
                         switch (orden) {
                             case 1:
-                                System.out.println("\n\t*** Seleccion Ascendete ***");
-                                mostrarArreglo(s.seleccionAsc(arreglo));
+                                
                                 do { 
-                                    System.out.println("\n\t*** Quieres ver los pasos ? ***");
+                                    System.out.println("\n\t** Quieres ver los pasos ? **");
                                     System.out.println("1. Si");
                                     System.out.println("2. No");
                                     System.out.println("3. Regresar al menu anterior");
                                     pasos= xd.nextInt();
                                     switch (pasos) {
                                     case 1:
-                                        System.out.println("\n\t*** Mostrando pasos del arreglo ***");
+                                        System.out.println("\n\t** Mostrando pasos del arreglo **");
+                                        System.out.println("\n\t** Seleccion Ascendete **");
+                                        mostrarArreglo(s.seleccionAscPa(arreglo));
                                         break;
 
                                     case 2:
-                                        System.out.println("\n\t*** No se mostrara pasos del arreglo ***");
+                                        System.out.println("\n\t** No se mostrara pasos del arreglo **");
+                                        System.out.println("\n\t** Seleccion Ascendete **");
+                                        mostrarArreglo(s.seleccionAsc(arreglo));
                                         break;
 
                                     case 3:
@@ -187,21 +195,24 @@ public class Menu {
                                 break;
 
                             case 2:
-                                System.out.println("\n\t*** tSeleccion Descendente ***");
-                                mostrarArreglo(s.seleccionDes(arreglo));
+                                
                                 do { 
-                                    System.out.println("\n\t*** Quieres ver los pasos ? ***");
+                                    System.out.println("\n\t** Quieres ver los pasos ? **");
                                     System.out.println("1. Si");
                                     System.out.println("2. No");
                                     System.out.println("3. Regresar al menu anterior");
                                     pasos= xd.nextInt();
                                     switch (pasos) {
                                     case 1:
-                                        System.out.println("\n\t*** Mostrando pasos del arreglo ***");
+                                        System.out.println("\n\t** Mostrando pasos del arreglo **");
+                                        System.out.println("\n\t** tSeleccion Descendente **");
+                                        mostrarArreglo(s.seleccionDesPa(arreglo));
                                         break;
 
                                     case 2:
-                                        System.out.println("\n\t*** No se mostrara pasos del arreglo ***");
+                                        System.out.println("\n\t** No se mostrara pasos del arreglo **");
+                                        System.out.println("\n\t** tSeleccion Descendente **");
+                                        mostrarArreglo(s.seleccionDes(arreglo));
                                         break;
 
                                     case 3:
@@ -230,28 +241,31 @@ public class Menu {
                     System.out.println("\n\tMETODO INSERCION");
                     Insercion i= new Insercion();
                     do {
-                        System.out.println("\n\t*** Escoja Ascendente o Descendente ***");
+                        System.out.println("\n\t** Escoja Ascendente o Descendente **");
                         System.out.println("1. Ascendente");
                         System.out.println("2. Descendente");
                         System.out.println("3. Regresar al menu de metodos");
                         orden= xd.nextInt();
                         switch (orden) {
                             case 1:
-                                System.out.println("\n\t*** Insercion Ascendete ***");
-                                mostrarArreglo(i.insercionAsc(arreglo));
+                                
                                 do { 
-                                    System.out.println("\n\t*** Quieres ver los pasos ? ***");
+                                    System.out.println("\n\t** Quieres ver los pasos ? **");
                                     System.out.println("1. Si");
                                     System.out.println("2. No");
                                     System.out.println("3. Regresar al menu anterior");
                                     pasos= xd.nextInt();
                                     switch (pasos) {
                                     case 1:
-                                        System.out.println("\n\t*** Mostrando pasos del arreglo ***");
+                                        System.out.println("\n\t** Mostrando pasos del arreglo **");
+                                        System.out.println("\n\t** Insercion Ascendete **");
+                                        mostrarArreglo(i.insercionAscPa(arreglo));
                                         break;
 
                                     case 2:
-                                        System.out.println("\n\t*** No se mostrara pasos del arreglo ***");
+                                        System.out.println("\n\t** No se mostrara pasos del arreglo **");
+                                        System.out.println("\n\t** Insercion Ascendete **");
+                                        mostrarArreglo(i.insercionAsc(arreglo));
                                         break;
 
                                     case 3:
@@ -261,26 +275,29 @@ public class Menu {
                                         System.out.println("Ingrese una opcion valida");
                                         break;
                                     }
-                                    
+                                   
                                 } while (pasos!=3);
                                 break;
 
                             case 2:
-                                System.out.println("\n\t*** Insercion Descendente ***");
-                                mostrarArreglo(i.insercionDes(arreglo));
+                                
                                 do { 
-                                    System.out.println("\n\t*** Quieres ver los pasos ? ***");
+                                    System.out.println("\n\t** Quieres ver los pasos ? **");
                                     System.out.println("1. Si");
                                     System.out.println("2. No");
                                     System.out.println("3. Regresar al menu anterior");
                                     pasos= xd.nextInt();
                                     switch (pasos) {
                                     case 1:
-                                        System.out.println("\n\t*** Mostrando pasos del arreglo ***");
+                                        System.out.println("\n\t** Mostrando pasos del arreglo **");
+                                        System.out.println("\n\t** Insercion Descendente **");
+                                        mostrarArreglo(i.insercionDesPa(arreglo));
                                         break;
 
                                     case 2:
-                                        System.out.println("\n\t*** No se mostrara pasos del arreglo ***");
+                                        System.out.println("\n\t** No se mostrara pasos del arreglo **");
+                                        System.out.println("\n\t** Insercion Descendente **");
+                                        mostrarArreglo(i.insercionDes(arreglo));
                                         break;
 
                                     case 3:
@@ -309,28 +326,31 @@ public class Menu {
                     System.out.println("\n\tMETODO BURBUJA AJUSTE");
                     BurbujaAjuste bm= new BurbujaAjuste();
                     do {
-                        System.out.println("\n\t*** Escoja Ascendente o Descendente ***");
+                        System.out.println("\n\t** Escoja Ascendente o Descendente **");
                         System.out.println("1. Ascendente");
                         System.out.println("2. Descendente");
                         System.out.println("3. Regresar al menu de metodos");
                         orden= xd.nextInt();
                         switch (orden) {
                             case 1:
-                                System.out.println("\n\t*** Burbja Ajuste Ascendete ***");
-                                mostrarArreglo(bm.burbujaAjusteAsc(arreglo));
+                                
                                 do { 
-                                    System.out.println("\n\t*** Quieres ver los pasos ? ***");
+                                    System.out.println("\n\t** Quieres ver los pasos ? **");
                                     System.out.println("1. Si");
                                     System.out.println("2. No");
                                     System.out.println("3. Regresar al menu anterior");
                                     pasos= xd.nextInt();
                                     switch (pasos) {
                                     case 1:
-                                        System.out.println("\n\t*** Mostrando pasos del arreglo ***");
+                                        System.out.println("\n\t** Mostrando pasos del arreglo **");
+                                        System.out.println("\n\t** Burbja Ajuste Ascendete **");
+                                        mostrarArreglo(bm.burbujaAjusteAscPa(arreglo));
                                         break;
 
                                     case 2:
-                                        System.out.println("\n\t*** No se mostrara pasos del arreglo ***");
+                                        System.out.println("\n\t** No se mostrara pasos del arreglo **");
+                                        System.out.println("\n\t** Burbja Ajuste Ascendete **");
+                                        mostrarArreglo(bm.burbujaAjusteAsc(arreglo));
                                         break;
 
                                     case 3:
@@ -345,8 +365,7 @@ public class Menu {
                                 break;
 
                             case 2:
-                                System.out.println("\n\t*** Burbuja Ajuste Descendente ***");
-                                mostrarArreglo(bm.burbujaAjusteDes(arreglo));
+                               
                                 do { 
                                     System.out.println("\n\tQuieres ver los pasos");
                                     System.out.println("1. Si");
@@ -355,11 +374,15 @@ public class Menu {
                                     pasos= xd.nextInt();
                                     switch (pasos) {
                                     case 1:
-                                        System.out.println("\n\t** Mostrando pasos del arreglo ***");
+                                        System.out.println("\n\t** Mostrando pasos del arreglo *");
+                                        System.out.println("\n\t** Burbuja Ajuste Descendente **");
+                                        mostrarArreglo(bm.burbujaAjusteDesPa(arreglo));
                                         break;
 
                                     case 2:
-                                        System.out.println("\n\t** No se mostrara pasos del arreglo ***");
+                                        System.out.println("\n\t** No se mostrara pasos del arreglo *");
+                                        System.out.println("\n\t** Burbuja Ajuste Descendente **");
+                                        mostrarArreglo(bm.burbujaAjusteDes(arreglo));
                                         break;
 
                                     case 3:
@@ -369,7 +392,8 @@ public class Menu {
                                         System.out.println("Ingrese una opcion valida");
                                         break;
                                     }
-                                    
+                                     System.out.println("\n\t** Burbuja Ajuste Descendente **");
+                                     mostrarArreglo(bm.burbujaAjusteDes(arreglo));
                                 } while (pasos!=3);
                                 break;
 
